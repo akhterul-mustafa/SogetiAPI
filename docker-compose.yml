@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sogetiapi:
+    image: ${DOCKER_REGISTRY-}sogetiapi
+    build:
+      context: .
+      dockerfile: SogetiAPI/Dockerfile
